@@ -1,4 +1,4 @@
-// Copyright 2017 The Draco Authors.
+// Copyright 2016 The Draco Authors.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,14 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-#include "draco/mesh/mesh_splitter.h"
+#include "draco/mesh/mesh_connected_components.h"
 
-#ifdef DRACO_TRANSCODER_SUPPORTED
-#include "draco/core/draco_test_base.h"
-#include "draco/core/draco_test_utils.h"
-#include "draco/core/vector_d.h"
-#include "draco/io/mesh_io.h"
-#include "draco/mesh/mesh_misc_functions.h"
+namespace draco {
 
-namespace {}  // namespace
-#endif        // DRACO_TRANSCODER_SUPPORTED
+MeshConnectedComponents::MeshConnectedComponents() {}
+
+}  // namespace draco
